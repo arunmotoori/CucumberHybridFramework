@@ -27,6 +27,8 @@ public class HomePage {
 	@FindBy(linkText="Login")
 	private WebElement loginOption;
 	
+	
+	
 	@FindBy(linkText="Register")
 	private WebElement registerOption;
 	
@@ -45,6 +47,7 @@ public class HomePage {
 	public LoginPage selectLoginOption() {
 		
 		elementUtils.clickOnElement(loginOption,CommonUtils.EXPLICIT_WAIT_BASIC_TIME);
+		System.out.println("deepa added line 50 homepage");
 		return new LoginPage(driver);
 		
 	}
